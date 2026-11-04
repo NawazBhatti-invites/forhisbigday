@@ -1,5 +1,5 @@
 /* ---------- Fonts (local files; see assets/fonts/README.md) ---------- */
-@font-face{font-family:'Tempting';src:url(../assets/fonts/Tempting.otf) format('opentype');font-display:swap}
+@font-face{font-family:'Sephora & Hayden';src:url(../assets/fonts/Sephora & Hayden.otf) format('opentype');font-display:swap}
 @font-face{font-family:'Birds of Paradise';src:url(../assets/fonts/BirdsOfParadise.ttf) format('truetype');font-display:swap}
 @font-face{font-family:'Astoria';src:url(../assets/fonts/Astoria.otf) format('opentype');font-display:swap}
 @font-face{font-family:'Romantic';src:url(../assets/fonts/Romantic.otf) format('opentype');font-display:swap}
@@ -8,7 +8,7 @@
 :root{
   --vh:100vh;
   --u:calc(var(--vh)/100);
-  --tempting:'Tempting','Parisienne','Segoe Script',cursive;
+  --tempting:'Sephora & Hayden','Parisienne','Segoe Script',cursive;
   --astoria:'Astoria','Parisienne','Segoe Script',cursive;
   --bop:'Birds of Paradise','Parisienne','Segoe Script',cursive;
   --romantic:'Romantic','Parisienne','Segoe Script',cursive;
@@ -66,8 +66,8 @@ h1,h2,h3,p{margin:0;font-weight:400}
 /* Programme (Poppins) */
 .dt{font-size:.95em;font-weight:500;line-height:1.35;text-wrap:balance}
 .sm{font-size:.78em;line-height:1.3}
-.ad{font-size:.9em;line-height:1.4;text-wrap:balance}.ad b{font-weight:500}#vn{display:block}
-.cl{font-size:.8em;line-height:1.3}
+.ad{font-family:var(--pop);font-size:.9em;line-height:1.4;text-wrap:balance}.ad b{font-weight:500}#vn{display:block}
+.cl{font-family:var(--tempting);font-size:1.25em;line-height:1.3}
 .tm,.cd>div{border:1px solid rgba(169,138,98,.38);background:linear-gradient(145deg,rgba(120,95,65,.12),rgba(255,255,255,.3));box-shadow:inset 1px 2px 4px rgba(100,76,48,.34),inset -1px -1px 2px rgba(255,255,255,.9)}
 .tm{font-size:1.4em;font-weight:500;line-height:1.3;padding:.1em .8em;border-radius:999px}
 .tm small{display:block;font-size:.48em;font-weight:400;line-height:1.2;padding-bottom:.15em}
@@ -79,7 +79,7 @@ h1,h2,h3,p{margin:0;font-weight:400}
 /* Walima compact positioning */
 .sc.walima{overflow:hidden}
 .sc.walima .in{position:absolute;left:50%;top:calc(var(--u)*10);width:54%;height:calc(var(--u)*40);margin:0;padding:0;transform:translateX(-50%);justify-content:center;gap:.25em}
-.walima .ehd{font-size:1.7em;line-height:1.2}.walima .tm{font-size:1.2em}.walima .cd{font-size:.78em}.walima .dt{font-size:.92em}.walima .ad{font-size:.85em;line-height:1.35}.walima .cl{font-size:.75em}
+.walima .ehd{font-size:1.7em;line-height:1.2}.walima .tm{font-size:1.2em}.walima .cd{font-size:.78em}.walima .dt{font-size:.92em}.walima .ad{font-size:.85em;line-height:1.35}.walima .cl{font-size:1.2em}
 .walima .btn{min-height:36px;font-size:.9em;padding:.1em 1em}
 
 /* Buttons */
@@ -105,7 +105,7 @@ h1,h2,h3,p{margin:0;font-weight:400}
 .tabs button{min-height:36px;padding:.25em .8em;border-radius:999px;border:1px solid rgba(169,138,98,.7);background:#fffaf1;color:var(--ink);font:500 .85em var(--pop);cursor:pointer}
 .tabs button.on{background:linear-gradient(180deg,#c9ab6f,#a07f45);color:#fff;border-color:#8f6f3e}
 .map{width:100%;height:clamp(100px,calc(var(--u)*15),140px);border:1px solid rgba(169,138,98,.6);border-radius:.7em;background:#e9dcc8}
-.sub{font-size:1em;font-weight:500;margin-top:.2em}
+.sub{font-family:var(--tempting);font-size:1.35em;font-weight:400;margin-top:.2em}
 .calls{display:flex;gap:.35em;flex-wrap:wrap;justify-content:center}
 
 /* ---------- Card opening ---------- */
